@@ -1,1 +1,1 @@
-# pragmaticML
+# 실용주의머신러닝
