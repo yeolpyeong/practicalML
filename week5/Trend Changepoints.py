@@ -3,7 +3,7 @@ import numpy as np
 from fbprophet import Prophet
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('/home/yeolpyeong/pragmaticML/week5/example_wp_peyton_manning.csv')
+df = pd.read_csv('./example_wp_peyton_manning.csv')
 #print(df.head())
 
 df['y'] = np.log(df['y'])
