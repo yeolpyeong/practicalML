@@ -23,7 +23,7 @@ learning_rate = 0.01
 iterations = 500
 
 # last, diff_24h, diff_per_24h, bid, ask, low, high, volume
-data = DplyFrame(pd.read_csv('/home/yeolpyeong/bitcoin_ticker.csv', delimiter=','))
+data = DplyFrame(pd.read_csv('./bitcoin_ticker.csv', delimiter=','))
 data = data >> sift(X.rpt_key == 'btc_krw') >> select(X.last, X.diff_24h, X.diff_per_24h, X.bid, X.ask, X.low, X.high, X.volume)
 data = np.asarray(data)
 #data = MinMaxScaler(data)
