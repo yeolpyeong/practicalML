@@ -4,7 +4,7 @@ rm(list=ls())
 library(prophet)
 library(dplyr)
 
-df <- read.csv('/home/yeolpyeong/pragmaticML/week5/example_wp_peyton_manning.csv') %>% mutate(y = log(y))
+df <- read.csv('./example_wp_peyton_manning.csv') %>% mutate(y = log(y))
 m <- prophet(df)
 future <- make_future_dataframe(m, period = 365)
 tail(df)
