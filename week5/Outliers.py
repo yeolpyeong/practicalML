@@ -3,7 +3,7 @@ import numpy as np
 from fbprophet import Prophet
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('/home/yeolpyeong/pragmaticML/week5/example_wp_R_outliers1.csv')
+df = pd.read_csv('./example_wp_R_outliers1.csv')
 df['y'] = np.log(df['y'])
 m = Prophet()
 m.fit(df)
@@ -18,7 +18,7 @@ model.plot(model.predict(future))
 plt.show()
 
 
-df = pd.read_csv('/home/yeolpyeong/pragmaticML/week5/example_wp_R_outliers2.csv')
+df = pd.read_csv('./example_wp_R_outliers2.csv')
 df['y'] = np.log(df['y'])
 m = Prophet()
 m.fit(df)
